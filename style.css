@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #111; background: #fff; font: 18px/1.6 Arial, sans-serif; }
+a { color: inherit; text-underline-offset: .2em; }
+header, main, footer { width: min(1100px, calc(100% - 40px)); margin: auto; }
+header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding-block: 24px; border-bottom: 1px solid #aaa; }
+nav { display: flex; gap: 24px; }
+.intro { padding-block: 64px; max-width: 850px; }
+h1 { font-size: clamp(36px, 6vw, 68px); line-height: 1.1; margin: 24px 0; }
+h2 { line-height: 1.2; }
+button { font: inherit; color: #000; background: #fff; border: 1px solid; padding: 12px 20px; cursor: pointer; }
+:focus-visible { outline: 3px solid #555; outline-offset: 5px; }
+.project { display: grid; grid-template-columns: 1fr 1.4fr; gap: 32px; padding-block: 32px; border-top: 1px solid #aaa; }
+img { display: block; width: 100%; height: auto; }
+footer { border-top: 1px solid #aaa; padding-block: 24px; }
+@media (max-width: 700px) { .project { grid-template-columns: 1fr; } .intro { padding-block: 32px; } }
